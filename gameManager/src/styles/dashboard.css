@@ -1,0 +1,40 @@
+.top-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.top-cards .card {
+  padding: 30px;
+}
+
+/* GLOW */
+.neon {
+  animation: glowPulse 2s infinite alternate;
+}
+
+@keyframes glowPulse {
+  from { box-shadow: 0 0 10px #22c55e; }
+  to { box-shadow: 0 0 25px #22c55e; }
+}
+
+/* HEATMAP */
+.heatmap {
+  display: grid;
+  grid-template-columns: repeat(30, 12px);
+  gap: 6px;
+  justify-content: center;
+}
+
+.heat-cell {
+  width: 12px;
+  height: 12px;
+  background: #111;
+  border-radius: 3px;
+}
+
+.level-1 { background: #166534; }
+.level-2 { background: #22c55e; }
+.level-3 { background: #4ade80; }
+.level-4 { background: #86efac; }
